@@ -8,7 +8,7 @@ try:
         print("O fatorial de 0 é 1!!!")        
     else:
         while (i > 1):
-            i = i-1
+            i -= 1
             x = x*i
         print("O fatorial de {} é {}!!!".format(y, x))
 except ValueError:
