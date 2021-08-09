@@ -72,12 +72,11 @@ try:
                         while (k < len(y)):
                             k+=3
                             z=''
-                            #print(('k'), (k), ('m'), (n))
+
                             while(n < k):
                                 z += y[n]
                                 n+=1
-                            if(z in d):
-                                print((d.get(z)), ("({})".format(z))) 
+                            print((d.get(z)), ("({})".format(z))) 
                             if(z == 'UAA' or z == 'UAG' or z == 'UGA'):
                                 break   
             controle = True
