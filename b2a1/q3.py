@@ -1,5 +1,5 @@
 try:
-    with open('arquivo.txt', 'r') as arq:
+    with open('./b2a1/arquivo.txt', 'r') as arq:
         arq.seek(0, 0)
         s = arq.readlines()
     i=0
