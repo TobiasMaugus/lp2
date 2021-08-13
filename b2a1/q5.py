@@ -83,7 +83,7 @@ try:
 except FileNotFoundError:
     print('"arquivo.txt" não foi encontrado!!!')
 except IndexError:
-    print('Há sequencias de bases incompletas na linha {}!!!.'.format(i))
+    print('Há sequencias de bases incompletas na linha {}!!!'.format(i))
 except Exception:
     print('Um erro inesperado aconteceu!!!')              
             
