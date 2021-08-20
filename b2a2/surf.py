@@ -16,8 +16,7 @@ try:
             menor = min(a)
             maior = max(a) 
             media = ((sum(a) - maior -menor)/3) #calculando as médias das notas de cada onda
-            media = round(media, 2)
-            
+
             surfista = linha[0]
             if(surfista not in d):     #especificando qual média de onda é de qual surfista 
                 d[surfista] = [media]
