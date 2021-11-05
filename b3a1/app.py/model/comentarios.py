@@ -14,6 +14,8 @@ class Comentarios(Base):
 
     id = Column(Integer, Sequence ( 'comentarios_id' ), primary_key=True)
     comentario = Column(String(1000))
-
+    atividades_id = Column(Integer)
+    usuarios_id = Column(Integer)
+    
     def __repr__(self):
         return f'Comentarios {self.nome}'

@@ -16,6 +16,7 @@ class Atividades(Base):
     km_percorridos = Column(Integer, nullable=False)
     tipo = Column(String(50), nullable=False)
     local = Column(String(100), nullable=False)
+    usuarios_id = Column(Integer)
 
 
     def __repr__(self):
