@@ -5,6 +5,7 @@ from model.usuarios import Usuarios
 from model.atividades import Atividades
 from model.comentarios import Comentarios
 from model.curtidas import Curtidas
+from model.comentarios_curtidas import Comentarios_Curtidas
 
 engine = create_engine("mysql+pymysql://primeiro_20202017120:cefetMG20202017120@primeiro.cefetvga.pro.br/primeiro_20202017120?charset=utf8mb4", echo=True)
 
@@ -48,6 +49,14 @@ def create():
     session.add(curtida1)    
     session.add(curtida2)    
     session.add(curtida3)    
+
+    comentario_curtida1 = Comentarios_Curtidas(comentarios_id = 1, curtidas_id = 1)
+    comentario_curtida2 = Comentarios_Curtidas(comentarios_id = 2, curtidas_id = 2)
+    comentario_curtida3 = Comentarios_Curtidas(comentarios_id = 3, curtidas_id = 3)
+
+    session.add(comentario_curtida1)    
+    session.add(comentario_curtida2)   
+    session.add(comentario_curtida3)   
 
     session.commit()
 

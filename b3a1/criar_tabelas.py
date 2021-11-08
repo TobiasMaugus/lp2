@@ -4,6 +4,7 @@ from model.usuarios import Usuarios
 from model.atividades import Atividades
 from model.curtidas import Curtidas
 from model.comentarios import Comentarios
+from model.comentarios_curtidas import Comentarios_Curtidas
 
 
 engine = create_engine("mysql+pymysql://primeiro_20202017120:cefetMG20202017120@primeiro.cefetvga.pro.br/primeiro_20202017120?charset=utf8mb4", echo=True)
@@ -19,3 +20,6 @@ curtidas.create(engine, checkfirst=True)
 
 comentarios = Comentarios.__table__
 comentarios.create(engine, checkfirst=True)
+
+comentarios_curtidas = Comentarios_Curtidas.__table__
+comentarios_curtidas.create(engine, checkfirst=True)
