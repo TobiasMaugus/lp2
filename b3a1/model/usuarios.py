@@ -6,7 +6,6 @@ Base = declarative_base()
 
 class Usuarios(Base):
 
-    # indica o nome da tabela no BD
     __tablename__ = 'usuarios'
 
     id = Column(Integer, Sequence ( 'usuarios_id' ), primary_key=True)

@@ -7,7 +7,6 @@ Base = declarative_base()
 
 class Curtidas(Base):
 
-    # indica o nome da tabela no BD
     __tablename__ = 'curtidas'
 
     id = Column(Integer, Sequence ( 'curtidas_id' ), primary_key=True)

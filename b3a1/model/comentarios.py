@@ -9,7 +9,6 @@ Base = declarative_base()
 
 class Comentarios(Base):
 
-    # indica o nome da tabela no BD
     __tablename__ = 'comentarios'
 
     id = Column(Integer, Sequence ( 'comentarios_id' ), primary_key=True)

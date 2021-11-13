@@ -6,7 +6,6 @@ Base = declarative_base()
 
 class Comentarios_Curtidas(Base):
 
-    # indica o nome da tabela no BD
     __tablename__ = 'comentarios_curtidas'
 
     id = Column(Integer, Sequence ( 'comentarios_curtidas_id' ), primary_key=True)
