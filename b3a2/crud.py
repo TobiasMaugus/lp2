@@ -120,7 +120,7 @@ def createCurtidas():
 
 
 def readAtividades():
-    tuplas = session.query(Atividades).filter(Atividades.local=='VGA').order_by(Atividades.km_percorridos)
+    tuplas = session.query(Atividades).filter(Atividades.local=='VGA').order_by(Atividades.km_percorridos.desc())
     for tupla in tuplas:
         print('id:', tupla.id, 'id_usuario:', tupla.usuarios_id, 'quilometragem:',tupla.km_percorridos, 'inicio:', tupla.hora_inicio, 'fim:', tupla.hora_termino)
 
