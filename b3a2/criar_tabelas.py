@@ -1,9 +1,6 @@
 from sqlalchemy import *
 
-from model.usuarios import Usuarios
-from model.atividades import Atividades
-from model.curtidas import Curtidas
-from model.comentarios import Comentarios
+from model.tabelas import Atividades, Comentarios, Curtidas, Usuarios
 
 
 
