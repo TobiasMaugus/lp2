@@ -46,5 +46,6 @@ class b4a1jogos(Base):
     id = Column(Integer, Sequence ( 'b4a1jogos_id' ), primary_key=True)
     nome = Column(String(70), nullable=False)
     preco = Column(Float, nullable=False)
+    rating = Column(Float, nullable=False)
     desenvolvedores_id = Column(Integer, ForeignKey('b4a1desenvolvedores.id'))
     usuarios = relationship("b4a1compras",backref='b4a1jogos', lazy=True)
