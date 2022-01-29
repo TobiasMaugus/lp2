@@ -1,0 +1,13 @@
+--REQUISITOS--
+
+A plataforma Steam tem o objetivo de venda de jogos eletrônicos. 
+Essa precisa armazenar o e-mail,nome e senha de seus usuários. 
+Também é necessário armazenar os jogos, com nome, preço, desenvolvedor e rating. 
+Cada desenvolvedor também deve ter seu nome e CNPJ armazenados. 
+Quando um usuário compra um jogo, deve ser armazenado a data e horário da compra.
+
+
+- Um desenvolvedor pode publicar quantos jogos quiser, e um jogo só pode ser publicado por um 
+único desenvolvedor.
+
+- Um usuário pode comprar quantos jogos quiser e um jogo pode ser comprado por muitos usuários.
